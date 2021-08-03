@@ -6,3 +6,5 @@ My own Blog build from Scratch
 its uses an API to serve the posts data
 <br>
 if you wanna see more about, read the post in [Deconstruct Blog](http://deconstructblog.herokuapp.com)
+<br>
+don't find the design strange, it's part of the charm 😉
