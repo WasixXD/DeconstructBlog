@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title>Deconstruct Blog</title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #194350;
+            }
+            .logo {
+                width: 15em;
+                height: 18rem;
+                padding: 0;
+                margin: 0;
+
+                
+            }
+            .logo img {
+                width: 20rem;
+                height: 20rem;
+                padding: 0;
+                margin: 0;
+            }
+
+            .about {
+                font-weight: bold;
+                margin-bottom: 3rem;
+            }
+            .about .card {
+                background-color: #FF8882;
+                box-shadow: 1rem 1rem black;
+            }
+
+            .about .col-md-4 {
+                max-width: 14.5rem;         
+                text-align: center;
+            }
+
+
+            .about img {
+                border-radius: 100%;
+                border: none;
+                margin: 1rem;
+                padding: 0.5rem;
+            }
+
+            .about figcaption {
+                padding: .3rem .7rem .7rem 2rem ;
+                text-align: center;
+            }
+            .about .card-title {
+                font-size: 2rem;
+            }
+
+            .about .card-text {
+
+                bottom: 5rem;
+                margin: 1rem;
+
+            }
+
+            .content .articles .card {
+                margin: 2rem;
+                padding: 1rem;
+                background-color:#9DBEB9;
+                box-shadow: .5rem .5rem black;
+                
+            }
+            .content .articles .card button {
+                background-color:#9DBEB9 ;
+                border: none;
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .content .articles .card input {
+                visibility: hidden;
+                height: 0;
+                width: 0;
+            }
+
+            
+
+            .content .articles .card button:hover {
+                text-decoration: underline;
+            }
+
+        </style>
+    </head>
+    <body>
+        <center>
+            <div class="logo">
+                <img src="./logo.png" alt="" class="img-fluid">
+            </div>
+            <div class="about">
+                <div class="card mb-3 " style="max-width: 540px;">
+                    <div class="row g-0 d-flex justify-content-center">
+                      <div class="col-md-4">
+                          <center>
+                              <img src="..." class="img-thumbnail" alt="...">
+                              <figcaption class="caption"></figcaption>
+
+                          </center>
+                      </div>
+                     
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+
+                          <p class="card-text">Hi, it's me Wasix<br>And this is <strong>Deconstruct Blog</strong> here i will <strong><i>try</i></strong> to document my projects, practice my english, and share ideas/problems that i faced along the way </p>
+                          <p class="git-stats">stars and adn</p>
+                        </div>
+                      </div>
+                    </div>                                              
+                  </div>
+            </div>
+        </center>
+
+        <center>
+
+            <div class="content">
+                <form action="/article" method="POST">
+
+                    <div class="articles container">
+                    
+                        
+                    </div>
+                </form>
+                
+            </div>
+
+        </center>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="./scripts/about.js"></script>
+        <script src="./scripts/posts.js"></script>
+        
+    </body>
+</html>

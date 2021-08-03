@@ -1,0 +1,24 @@
+{
+  "name": "deconstructblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node-dev ./server/init.js",
+    "start": "node ./server/init.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "markdown-it": "^12.1.0",
+    "mongoose": "^5.13.5"
+  },
+  "devDependencies": {
+    "node-dev": "^7.0.0"
+  }
+}

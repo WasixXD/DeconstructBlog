@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                background-color: #194350;
+                overflow-x: hidden;
+            }
+
+            .logo {
+                width: 18rem;
+                height:18rem;
+                padding: 0;
+                margin: 0;
+                
+            }
+            .logo img {
+                width: 20rem;
+                height: 20rem;
+                padding: 0;
+                margin: 0;
+            }
+
+
+            article {
+                background-color: #9DBEB9;
+                margin: 0 5rem 5rem 5rem;
+                box-shadow: 1rem 1rem black;
+            }
+
+            .content article .app h1,h2,h3,h4 {
+                font-size: 2rem;
+                font-weight: 700;
+                padding: 1rem;
+                /* margin: 1rem; */
+            }
+
+            .content article .app blockquote {
+               
+                width: 10rem;
+            }
+
+            .content article .app ul {
+                
+                font-weight: 900;
+            }
+
+            .content article .app p {
+                text-align: justify;
+                padding: 0.6rem;
+                font-weight: 700;
+                margin: .2rem;
+                font-size: 1rem;
+            }
+
+            footer {
+                background-color: #9DBEB9;
+                text-align: center;
+                display: flex;
+                align-self: center;
+                align-items: center;
+            }
+            footer .lead {
+                width: 70%;
+            }
+
+            
+            footer .icons {
+                align-items: center;
+                align-self: center;
+               
+            }
+            footer a {
+                color: white;
+                font-size: 4rem;
+                padding-right: 1.5rem;
+               
+   
+                
+            }
+
+            footer .git:hover {
+                color: black;
+
+            }
+
+            
+
+        </style>
+        <title>Deconstruct Blog | Post</title>
+    </head>
+    <body>
+        <center>
+            <div class="logo">
+                <img src="./logo.png" alt="" class="img-fluid">
+            </div>
+
+        </center>
+        <% contents.forEach(function(content) { %>
+
+        <center>
+
+            <div class="content ">
+                <article >
+                    <h1><strong><%-content.title%></strong></h1>
+                    <div class="app lead container">
+                        <%- content.body %>
+                    </div>
+                    
+                </article>
+
+
+            </div>
+
+        </center>
+
+        <center>
+
+            <footer class="text-center">
+                <div class=" lead"><strong><%=content.author%> - <%= content.created%> </strong></div>
+                <div class="icons">
+                    <a href="https://github.com/WasixXD" class="git"><i class="fab fa-github"></i></a> 
+            </div>
+                    <div class="icons">
+                        <a href="https://twitter.com/MEUAMIG83039076" class="tt"><i class="fab fa-twitter"></i></a>                     
+                    </div>
+               
+                
+            </footer>
+        </center>
+               
+
+            <% }); %>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+    </body>
+</html>
